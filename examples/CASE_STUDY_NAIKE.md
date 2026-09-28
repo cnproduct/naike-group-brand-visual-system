@@ -52,31 +52,31 @@
 <img src="../naike_brand_output/images/01_doorhead_facade.jpg" width="100%" alt="公司总部大厦门头外立面">
 
 #### 02. 前台接待大厅形象墙 (Reception Lobby)
-*意大利 Calacatta 鱼肚白天然大理石圆角接待台 + 1500mm 人眼黄金视平线拉丝金属立体字，实木吸音格栅。*
+*意大利 Calacatta 鱼肚白大理石圆角接待台，中国籍女性专业接待员端坐迎宾，背景为实木吸音格栅与 3D 耐科激情红发光字。*
 <img src="../naike_brand_output/images/02_reception_lobby.jpg" width="100%" alt="前台接待大厅形象墙">
 
 #### 03. 走廊企业文化展示墙 (Corridor Culture Wall)
-*模块化亚克力与磁吸展板，展示“始于2008实体工厂智造”发展历程、全球出口航线图及礼品/环保餐具样品壁龛。*
+*模块化亚克力与磁吸展板，中国籍员工在过道交流，展示“始于2008实体工厂智造”发展历程、全球出口航线图及样品展示壁龛。*
 <img src="../naike_brand_output/images/03_corridor_wall.jpg" width="100%" alt="走廊企业文化展示墙">
 
 #### 04. 智能高管董事会议室与防撞磨砂腰线 (Conference Room)
-*落地隔音玻璃隔断贴有 200mm 专属防撞磨砂腰线（65%透光率），双85寸视频会议大屏显示全球战略 Keynote。*
+*落地隔音玻璃隔断贴有 200mm 专属防撞磨砂腰线，全员中国籍高管与董事会成员围坐研讨全球战略，4K大屏。*
 <img src="../naike_brand_output/images/04_conference_room.jpg" width="100%" alt="智能高管董事会议室">
 
 #### 05. 多功能学术培训厅与学术演讲台 (Training Hall)
-*胡桃木演讲台正面嵌入金属 Logo 标牌，无缝 P1.2 LED 屏显示 16:9 耐科红蓝待机主视觉，影院级折叠桌椅。*
+*胡桃木演讲台正面嵌入金属 Logo 标牌，身着正装的中国籍主讲高管自信演讲，台下坐满中国籍员工与骨干，无缝 P1.2 LED 屏。*
 <img src="../naike_brand_output/images/05_training_hall.jpg" width="100%" alt="多功能学术培训厅演讲台">
 
-#### 06. 贵宾接待室轻奢空间 (VIP Executive Lounge)
-*意大利高级皮质沙发组合、定制压凹真皮杯垫、骨瓷茶具配耐科金镶边，背景悬挂现代抽象几何艺术画。*
+#### 06. 贵宾接待室轻奢空间 (VIP Executive Lounge · 涉外客商接待场景)
+*【涉外客户接待场景】中国籍高管以专业热忱姿态接待来访的欧美外籍客户与海外采购商，共同在洞石茶几前审阅定制产品样品。*
 <img src="../naike_brand_output/images/06_vip_lounge.jpg" width="100%" alt="贵宾接待室轻奢空间">
 
 ---
 
 ### 2. 大型产品发布会与商务办公事务用品
 
-#### 07. 全球产品发布会 32:9 曲面巨幕主舞台 (Launch Keynote Stage)
-*32:9 超宽环形曲面主屏，耐科红蓝动态光粒子交织，黑色镜面地台倒影与激光光柱，气场对标顶级科技峰会。*
+#### 07. 全球产品发布会 32:9 曲面巨幕主舞台 (Launch Keynote Stage · 涉外发布场景)
+*【涉外发布场景】中国籍高管主讲人伫立光柱中央控场讲演，32:9 超宽环形曲面主屏交织光粒子，台下坐满全球各地的外籍买家与海外分销商。*
 <img src="../naike_brand_output/images/07_launch_stage.jpg" width="100%" alt="全球产品发布会主舞台">
 
 #### 08. 商务办公文具、名片、工牌与产品目录平铺 (Stationery Suite)

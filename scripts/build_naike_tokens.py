@@ -40,7 +40,12 @@ tokens = {
     },
     "logo_form_factor": "symbol_or_square",
     "version": "2.0.0",
-    "generator": "Brand Visual System Master (Enterprise Standard v2.0)"
+    "generator": "Brand Visual System Master (Enterprise Standard v2.0)",
+    "persona_representation_policy": {
+      "default_employee_ethnicity": "Chinese / East Asian (耐科集团内部员工、高管、主讲人、接待人员全员默认为中国籍员工/华人)",
+      "foreign_clients_scope": "Exclusively in international business hospitality, overseas buyer meetings, and global product launch audience (仅在贵宾室接待外宾、外商洽谈宴请及发布会海外买家观众席场景中出现外籍人士)",
+      "gate_compliance": "Brand Guardian Gate F (Global Corporate Persona & Character Gate)"
+    }
   },
   "color_palette": {
     "primary": {

@@ -48,3 +48,21 @@
 Negative Prompt:
 blurry, low resolution, distorted letters, deformed geometry, chaotic layout, overexposed neon glow, cheap plastic texture, misaligned walls, noisy background, oversaturated colors, watermark, signature, stock photo watermark, low-budget office, warped text, tilted perspective.
 ```
+
+---
+
+## 👥 四、企业人物群像与多模态角色默认全局规范 (Global Persona & Ethnicity Policy)
+
+在生成涉及人物的企业实景与办公渲染时，必须严格执行以下全局身份原则：
+
+1. **企业员工全局默认规则 (Global Default: 100% Chinese / East Asian Staff)**:
+   - 耐科集团内部所有岗位员工（包括前台接待、行政人员、办公区团队、会议室高管、培训讲师与听众、工牌证件照主角、名片持有人）**在所有场景中必须强制默认为中国籍专业员工（Chinese / East Asian corporate professionals）**；
+   - 提示词必须显式包含：`professional Chinese female receptionist`, `Chinese corporate executives and board members`, `confident Chinese keynote speaker`, `Chinese enterprise team` 等关键词。
+
+2. **外籍人员仅限涉外商务接待场景 (Foreign Individuals Exclusively for Overseas Clients & Buyers)**:
+   - **唯一允许出现外国人的场景**：涉及**海外客户接待、外商来访洽谈、全球采购对接与展会国际买家**的专属场景；
+   - 典型场景包括：
+     - **贵宾接待室 (VIP Lounge)**：中国高管热情接待到访的欧美/国际海外客户（`Chinese executive host professionally receiving visiting international foreign buyers and clients`）；
+     - **全球发布会 (Launch Keynote)**：台上主讲人始终为中国高管，台下观众席呈现来自全球各地的海外买家与国际分销商（`charismatic Chinese presenter on stage addressing international buyers and overseas distributors in audience`）；
+     - **海外展会展位 (Trade Show Booth)**：中国业务经理在展位上向海外采购商展示样品。
+

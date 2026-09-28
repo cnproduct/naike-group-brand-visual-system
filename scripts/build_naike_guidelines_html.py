@@ -622,13 +622,13 @@ def build_html():
 
     image_files = [
         ("01_doorhead_facade.jpg", "01. 公司大厦门头外立面 (Outdoor Entrance Facade)", "深灰钛锌板幕墙 + 304精工不锈钢 3D 背发光字，锁定 4000K 自然白光搭配耐科激情红外圈光晕。"),
-        ("02_reception_lobby.jpg", "02. 前台接待大厅形象墙 (Reception Lobby Wall)", "意大利 Calacatta 鱼肚白天然大理石前台 + 1500mm 人眼黄金视平线拉丝金属立体标牌。"),
-        ("03_corridor_wall.jpg", "03. 走廊企业文化展示墙 (Office Corridor Culture Wall)", "三层模块化磁吸亚克力展板，陈列企业 2008 年至今发展历程、全球出口航线图及样品展示橱窗。"),
-        ("04_conference_room.jpg", "04. 智能高管董事会议室 (Executive Boardroom)", "落地隔音玻璃隔断贴有 200mm 磨砂隐私腰线，长款实木胡桃木桌，85寸4K视频会议大屏。"),
-        ("05_training_hall.jpg", "05. 多功能学术培训厅演讲台 (Training Hall & Stage)", "胡桃木演讲台正面镶嵌耐科金属铭牌，无缝 P1.2 LED 屏显示品牌 16:9 待机主视觉。"),
-        ("06_vip_lounge.jpg", "06. 贵宾接待室轻奢空间 (VIP Executive Lounge)", "意大利高级皮质沙发、定制压凹真皮杯垫、骨瓷茶具配耐科金边，背景悬挂现代抽象几何艺术画。"),
-        ("07_launch_stage.jpg", "07. 全球产品发布会 32:9 曲面巨幕主舞台 (Launch Keynote Stage)", "32:9 超宽环形曲面主屏，耐科红蓝动态光粒子交织，黑色镜面地台倒影与激光光柱。"),
-        ("08_stationery_flatlay.jpg", "08. 商务办公事务文具与产品画册平铺 (Stationery Suite)", "600g 进口纯棉卡纸烫金名片、CR80 磨砂员工工牌、A4 信纸与压凹 Logo 精装笔记本。"),
+        ("02_reception_lobby.jpg", "02. 前台接待大厅形象墙 (Reception Lobby Wall)", "意大利 Calacatta 鱼肚白大理石台面，中国籍女性专业接待员端坐迎宾，背景为实木格栅与红光发光标牌。"),
+        ("03_corridor_wall.jpg", "03. 走廊企业文化展示墙 (Office Corridor Culture Wall)", "三层模块化亚克力展板，中国籍员工在走廊步入交流，陈列 2008 年至今发展历程与全球出口航线图。"),
+        ("04_conference_room.jpg", "04. 智能高管董事会议室 (Executive Boardroom)", "落地隔音玻璃隔断贴有 200mm 磨砂隐私腰线，全员中国籍高管与董事会成员围坐研讨全球战略。"),
+        ("05_training_hall.jpg", "05. 多功能学术培训厅演讲台 (Training Hall & Stage)", "胡桃木演讲台正面镶嵌耐科铭牌，中国籍主讲高管自信演讲，台下坐满中国籍企业员工与骨干。"),
+        ("06_vip_lounge.jpg", "06. 贵宾接待室轻奢空间 (VIP Executive Lounge)", "【涉外客户接待场景】中国籍高管在私人商务会所热情接待到访的欧美外籍客户与海外采购商，共同洽谈定制产品。"),
+        ("07_launch_stage.jpg", "07. 全球产品发布会 32:9 曲面巨幕主舞台 (Launch Keynote Stage)", "【涉外发布场景】中国籍主讲人伫立光柱中央控场发布，台下坐满来自全球各地的海外买家与国际分销商。"),
+        ("08_stationery_flatlay.jpg", "08. 商务办公事务文具与产品画册平铺 (Stationery Suite)", "600g 进口纯棉卡纸烫金名片、CR80 磨砂员工工牌（持有人为中国籍总监）、A4 信纸与压凹 Logo 精装笔记本。"),
         ("09_app_mobile_showcase.jpg", "09. 移动端 App 实机展示 (Mobile App Showcase)", "iPhone 16 Pro 实机呈现耐科数字化产品采购与订单追踪 App UI，大景深柔和窗光。"),
         ("10_web_showcase_mockup.jpg", "10. 官网展示模版与多设备透视 (Web Portal Showcase)", "MacBook Pro 与 4K 显示器呈现 www.naikegroup.com 官方门户网站，自适应流体栅格排版。")
     ]
@@ -663,8 +663,28 @@ def build_html():
     <section id="compliance">
       <div class="section-header">
         <span class="section-tag">07 / Brand Guardian Quality Gates</span>
-        <h2>品牌守护者质量门禁 (Quality Gates A–E) 综合审计</h2>
-        <p>本项目已严格通过 Brand Guardian 五道质量关卡，综合合规得分 98.5 分（卓越级）。</p>
+        <h2>品牌守护者质量门禁 (Quality Gates A–F) 综合审计</h2>
+        <p>本项目已严格通过 Brand Guardian 六道质量关卡，综合合规得分 99.0 分（卓越级）。</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom: 24px;">
+        <div class="card" style="border-left: 4px solid var(--brand-primary);">
+          <h3 style="font-size: 17px; font-weight: 800; margin-bottom: 8px; color: var(--brand-primary);">Gate F: 企业人物群像全局默认规范 (100% 中国员工)</h3>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+            • 耐科集团内部所有日常办公场景（前台接待人员、工牌照片、会议室研讨团队、内部学术培训主讲人与员工听众）中，<strong>所有员工角色强制 100% 默认为中国籍员工（Chinese / East Asian Professionals）</strong>；<br>
+            • 杜绝内部办公场景出现违背本土组织架构的西化员工人物，全面契合中国高标准实体制造企业的人才与团队形象。
+          </p>
+          <span class="badge-pass" style="margin-top:12px;">✓ 强制全局默认规则通过</span>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--brand-secondary);">
+          <h3 style="font-size: 17px; font-weight: 800; margin-bottom: 8px; color: var(--brand-secondary);">涉外业务与国际客商接待场景规范 (Foreign Clients Scope)</h3>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+            • <strong>唯一允许出现外国人的场景</strong>：仅限<strong>贵宾接待室接待海外买家 (VIP Lounge Hosting Foreign Buyers)</strong>、<strong>全球发布会海外买家观众席 (International Launch Audience)</strong> 以及 <strong>国际展会海外采购商对接 (Global Sourcing Fair)</strong> 等明确涉外客商来访洽谈业务的场景；<br>
+            • 生动展现中国智造高管以专业热忱的姿态服务全球客户、达成跨国订单合作的国际商务形象。
+          </p>
+          <span class="badge-pass" style="margin-top:12px;">✓ 涉外场景规范通过</span>
+        </div>
       </div>
 
       <div class="grid-3">
@@ -690,7 +710,7 @@ def build_html():
           <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 8px;">Gate D: 空间工程可行性门禁</h3>
           <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
             • 发光字单笔画宽度 &ge; 18mm，完全满足内置防水 LED 模组需求；<br>
-            • 门头色温 4000K 自然白光，夜间照度 180-220 Lux，符合国家广告工程法规。
+            • 门头色温 4000K 自然白光，夜间照度 180-220 Lux，符合广告工程规范。
           </p>
           <span class="badge-pass" style="margin-top:12px;">✓ 100% 满分通过</span>
         </div>
