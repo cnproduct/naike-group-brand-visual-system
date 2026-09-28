@@ -1,0 +1,178 @@
+{
+  "brand_meta": {
+    "name": "开思 KAISI",
+    "logo_file": "media_1788653455564.png",
+    "logo_dimensions": {
+      "width": 1024,
+      "height": 342,
+      "aspect_ratio": 2.99
+    },
+    "logo_form_factor": "horizontal_wordmark",
+    "version": "2.0.0",
+    "generator": "Brand Visual System Master (AGY/Claude/OpenCode Standard)"
+  },
+  "color_palette": {
+    "primary": {
+      "name": "Brand Primary Core",
+      "hex": "#0070F0",
+      "rgb": "rgb(0, 112, 240)",
+      "cmyk": "C100 M53 Y0 K6",
+      "hsl": "hsl(212, 100%, 47%)",
+      "usage_ratio": "30% (Brand anchors, key surfaces, navigation active states)"
+    },
+    "secondary": {
+      "name": "Brand Secondary Accent",
+      "hex": "#F0B000",
+      "rgb": "rgb(240, 176, 0)",
+      "cmyk": "C0 M27 Y100 K6",
+      "hsl": "hsl(44, 100%, 47%)",
+      "usage_ratio": "15% (Data highlights, secondary illustrations, badges)"
+    },
+    "accent_cta": {
+      "name": "High-Energy CTA Accent",
+      "hex": "#F88C10",
+      "rgb": "rgb(248, 140, 16)",
+      "cmyk": "C0 M44 Y94 K3",
+      "hsl": "hsl(32, 95%, 52%)",
+      "usage_ratio": "10% (Action buttons, high-priority alert badges, conversion anchors)"
+    },
+    "canvas_light": {
+      "name": "Base Light Canvas",
+      "hex": "#F8FAFC",
+      "rgb": "rgb(248, 250, 252)",
+      "usage_ratio": "45% (Background canvases, card fills, clean space)"
+    },
+    "surface_dark": {
+      "name": "Deep Space Charcoal",
+      "hex": "#303030",
+      "rgb": "rgb(48, 48, 48)",
+      "usage_ratio": "Primary Text, Dark Mode background, architectural fascia backplates"
+    },
+    "semantics": {
+      "success": {
+        "hex": "#10B981",
+        "rgb": [
+          16,
+          185,
+          129
+        ],
+        "cmyk": [
+          75,
+          0,
+          60,
+          0
+        ]
+      },
+      "warning": {
+        "hex": "#F59E0B",
+        "rgb": [
+          245,
+          158,
+          11
+        ],
+        "cmyk": [
+          0,
+          42,
+          100,
+          0
+        ]
+      },
+      "danger": {
+        "hex": "#EF4444",
+        "rgb": [
+          239,
+          68,
+          68
+        ],
+        "cmyk": [
+          0,
+          85,
+          65,
+          0
+        ]
+      },
+      "info": {
+        "hex": "#0070F0",
+        "rgb": [
+          0,
+          112,
+          240
+        ],
+        "cmyk": [
+          100,
+          53,
+          0,
+          6
+        ]
+      }
+    }
+  },
+  "contrast_audit": {
+    "primary_on_white": {
+      "ratio": 4.59,
+      "wcag_aa_normal_text": true,
+      "wcag_aa_large_text": true,
+      "wcag_aaa_normal_text": false
+    },
+    "white_on_primary": {
+      "ratio": 4.59,
+      "wcag_aa_normal_text": true,
+      "wcag_aa_large_text": true
+    },
+    "primary_on_dark": {
+      "ratio": 2.88,
+      "wcag_aa_normal_text": false
+    }
+  },
+  "spatial_clearance": {
+    "unit": "X (defined as 1/2 of logo height or core symbol radius)",
+    "safe_zone": "0.5X on all 4 boundaries (No text, graphics or border intrusion)",
+    "minimum_digital_size_px": 48,
+    "minimum_print_size_mm": 20
+  },
+  "typography_pairings": {
+    "chinese_display": "PingFang SC, 'Source Han Sans CN', 'Microsoft YaHei', sans-serif",
+    "chinese_body": "'PingFang SC', 'Source Han Sans CN', 'Hiragino Sans GB', sans-serif",
+    "western_display": "'Inter', 'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+    "western_body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "monospace_code": "'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace",
+    "hierarchy_scale": {
+      "hero_display": {
+        "size": "48px / 3rem",
+        "weight": "800",
+        "line_height": "1.15"
+      },
+      "h1_title": {
+        "size": "36px / 2.25rem",
+        "weight": "700",
+        "line_height": "1.25"
+      },
+      "h2_section": {
+        "size": "24px / 1.5rem",
+        "weight": "600",
+        "line_height": "1.35"
+      },
+      "h3_card": {
+        "size": "18px / 1.125rem",
+        "weight": "600",
+        "line_height": "1.45"
+      },
+      "body_base": {
+        "size": "15px / 0.9375rem",
+        "weight": "400",
+        "line_height": "1.65"
+      },
+      "caption_small": {
+        "size": "13px / 0.8125rem",
+        "weight": "400",
+        "line_height": "1.5"
+      },
+      "micro_tag": {
+        "size": "11px / 0.6875rem",
+        "weight": "600",
+        "line_height": "1.4",
+        "letter_spacing": "0.05em"
+      }
+    }
+  }
+}

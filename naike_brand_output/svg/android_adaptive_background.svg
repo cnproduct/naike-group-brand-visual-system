@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 432" width="432" height="432">
+
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="naikeRedGrad" x1="0%" y1="0%" x2="40%" y2="100%">
+      <stop offset="0%" stop-color="#E0221B"/>
+      <stop offset="60%" stop-color="#B70005"/>
+      <stop offset="100%" stop-color="#8E0003"/>
+    </linearGradient>
+
+    <!-- Background Blue Gradient -->
+    <linearGradient id="naikeBlueGrad" x1="20%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC"/>
+      <stop offset="50%" stop-color="#004B98"/>
+      <stop offset="100%" stop-color="#002868"/>
+    </linearGradient>
+
+    <!-- Golden Sparkle Glow -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D depth -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <rect width="432" height="432" fill="url(#naikeRedGrad)"/>
+  <path d="M 0 240 C 140 270, 220 180, 432 150 L 432 432 L 0 432 Z" fill="url(#naikeBlueGrad)"/>
+  <!-- Concentric Ambient Ripple -->
+  <circle cx="216" cy="216" r="140" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <circle cx="216" cy="216" r="80" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+</svg>

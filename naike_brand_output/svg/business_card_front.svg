@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 638" width="1062" height="638">
+
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="naikeRedGrad" x1="0%" y1="0%" x2="40%" y2="100%">
+      <stop offset="0%" stop-color="#E0221B"/>
+      <stop offset="60%" stop-color="#B70005"/>
+      <stop offset="100%" stop-color="#8E0003"/>
+    </linearGradient>
+
+    <!-- Background Blue Gradient -->
+    <linearGradient id="naikeBlueGrad" x1="20%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC"/>
+      <stop offset="50%" stop-color="#004B98"/>
+      <stop offset="100%" stop-color="#002868"/>
+    </linearGradient>
+
+    <!-- Golden Sparkle Glow -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D depth -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <defs>
+    <linearGradient id="cardDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141B2D"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+    <linearGradient id="goldRedLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B70005"/>
+      <stop offset="50%" stop-color="#FFB800"/>
+      <stop offset="100%" stop-color="#004B98"/>
+    </linearGradient>
+    <pattern id="cardDotGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Slate Background with Dot Matrix Texture -->
+  <rect width="1062" height="638" rx="28" fill="url(#cardDarkBg)"/>
+  <rect width="1062" height="638" rx="28" fill="url(#cardDotGrid)"/>
+
+  <!-- Geometric Architectural Accent Glow -->
+  <path d="M 720 0 L 1062 0 L 1062 638 L 840 638 Z" fill="#004B98" opacity="0.08"/>
+  <path d="M 880 0 L 1062 0 L 1062 380 Z" fill="#B70005" opacity="0.07"/>
+
+  <!-- Bottom Precision Color Bar -->
+  <rect x="0" y="626" width="1062" height="12" fill="url(#goldRedLine)"/>
+
+  <!-- Left Main Badge -->
+  <g transform="translate(100, 180) scale(0.68)" filter="url(#badgeShadow)">
+    
+    <!-- Squircle Container with Clip Path -->
+    <g id="naikeBadgeGraphic">
+      <clipPath id="squircleClip">
+        <rect x="0" y="0" width="400" height="400" rx="90" ry="90" />
+      </clipPath>
+
+      <g clip-path="url(#squircleClip)">
+        <!-- Top Crimson Background -->
+        <rect x="0" y="0" width="400" height="400" fill="url(#naikeRedGrad)"/>
+
+        <!-- Bottom Dynamic Ocean Blue Wave/Field -->
+        <path d="M -20 220 C 120 240, 180 180, 420 150 L 420 420 L -20 420 Z" fill="url(#naikeBlueGrad)"/>
+
+        <!-- Stylized White Dynamic 'n' Arch -->
+        <!-- Left Stem: Tilted Pillar with forward slant -->
+        <path d="M 125 105 L 165 105 L 115 305 L 75 305 Z" fill="#FFFFFF"/>
+
+        <!-- Forward Sweeping Arch Bridge & Right Leg -->
+        <path d="M 152 185 C 190 120, 290 120, 310 180 C 315 195, 305 240, 295 305 L 255 305 C 265 245, 272 198, 258 178 C 242 155, 178 160, 142 225 Z" fill="#FFFFFF"/>
+
+        <!-- Four-Point Precision Sparkle Star -->
+        <!-- Center of star at (315, 125) -->
+        <g transform="translate(315, 125)" filter="url(#starGlow)">
+          <path d="M 0 -28 Q 0 0, 28 0 Q 0 0, 0 28 Q 0 0, -28 0 Q 0 0, 0 -28 Z" fill="#FFFFFF"/>
+          <circle cx="0" cy="0" r="3.5" fill="#FFB800"/>
+        </g>
+      </g>
+
+      <!-- Inner Ambient Specular Highlight Line -->
+      <rect x="3" y="3" width="394" height="394" rx="88" ry="88" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+    </g>
+
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(420, 290)">
+    <text x="0" y="0" font-family="'Montserrat', sans-serif" font-size="54" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">Naike Group</text>
+    <text x="2" y="38" font-family="'PingFang SC', sans-serif" font-size="18" font-weight="700" fill="#FFB800" letter-spacing="4">耐科集团 · 实体智造与全球供应链</text>
+    <text x="2" y="70" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#94A3B8" letter-spacing="2">FACTORY-BACKED PRODUCT DEVELOPMENT SINCE 2008</text>
+  </g>
+
+  <!-- Microchip Security Anti-counterfeiting Accent -->
+  <g transform="translate(930, 80)">
+    <rect width="52" height="42" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,184,0,0.4)" stroke-width="1.5"/>
+    <circle cx="26" cy="21" r="8" fill="none" stroke="#FFB800" stroke-width="1.5"/>
+    <line x1="8" y1="21" x2="18" y2="21" stroke="#FFB800" stroke-width="1.5"/>
+    <line x1="34" y1="21" x2="44" y2="21" stroke="#FFB800" stroke-width="1.5"/>
+  </g>
+</svg>

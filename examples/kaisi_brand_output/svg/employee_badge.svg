@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638 1004" width="638" height="1004">
+  <defs>
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Lanyard punch slot -->
+  <rect x="259" y="30" width="120" height="20" rx="10" fill="#CBD5E1"/>
+
+  <!-- Badge Card Container -->
+  <rect x="20" y="70" width="598" height="910" rx="28" fill="url(#badgeBg)" stroke="rgba(0,0,0,0.08)" stroke-width="2"/>
+
+  <!-- Top Brand Banner -->
+  <path d="M 20 98 Q 20 70 48 70 L 590 70 Q 618 70 618 98 L 618 200 L 20 200 Z" fill="#0070F0"/>
+  <line x1="20" y1="200" x2="618" y2="200" stroke="#F88C10" stroke-width="6"/>
+
+  <!-- Logo lockup in banner -->
+  <g transform="translate(60, 110)">
+    <rect width="48" height="48" rx="12" fill="#FFFFFF"/>
+    <circle cx="24" cy="24" r="12" fill="#0070F0"/>
+    <text x="64" y="34" font-family="-apple-system, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">开思 KAISI</text>
+  </g>
+
+  <!-- Photo Holder -->
+  <g transform="translate(209, 280)">
+    <circle cx="110" cy="110" r="110" fill="#E2E8F0" stroke="#0070F0" stroke-width="6"/>
+    <!-- Avatar silhouette -->
+    <circle cx="110" cy="90" r="44" fill="#94A3B8"/>
+    <path d="M 50 190 Q 110 130 170 190 Z" fill="#94A3B8"/>
+  </g>
+
+  <!-- Employee Name & Details -->
+  <g transform="translate(319, 570)" text-anchor="middle">
+    <text y="0" font-family="'PingFang SC', sans-serif" font-size="36" font-weight="700" fill="#303030">张伟 / David Zhang</text>
+    <text y="40" font-family="-apple-system, sans-serif" font-size="18" font-weight="600" fill="#0070F0" letter-spacing="1">SENIOR CHIEF ARCHITECT</text>
+    <rect x="-80" y="65" width="160" height="32" rx="16" fill="#F88C10" opacity="0.2"/>
+    <text y="87" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#F88C10">ID: REN-202609</text>
+  </g>
+
+  <!-- Barcode / NFC chip zone -->
+  <g transform="translate(70, 770)">
+    <rect width="498" height="140" rx="16" fill="#FFFFFF" stroke="rgba(0,0,0,0.06)" stroke-width="1.5"/>
+    <text x="30" y="45" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#64748B">DEPARTMENT: AI &amp; DIGITAL ASSET LAB</text>
+    <text x="30" y="75" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" fill="#64748B">SECURITY CLEARANCE: LEVEL 4 (ALL ACCESS)</text>
+    <!-- Barcode stripes -->
+    <g transform="translate(30, 95)" fill="#303030">
+      <rect x="0" width="4" height="30"/>
+      <rect x="8" width="8" height="30"/>
+      <rect x="20" width="3" height="30"/>
+      <rect x="28" width="6" height="30"/>
+      <rect x="40" width="12" height="30"/>
+      <rect x="58" width="4" height="30"/>
+      <rect x="68" width="9" height="30"/>
+      <rect x="85" width="4" height="30"/>
+      <rect x="95" width="7" height="30"/>
+      <rect x="110" width="5" height="30"/>
+      <rect x="125" width="14" height="30"/>
+      <rect x="145" width="4" height="30"/>
+      <rect x="155" width="8" height="30"/>
+      <rect x="170" width="6" height="30"/>
+      <rect x="185" width="10" height="30"/>
+      <rect x="205" width="4" height="30"/>
+      <rect x="220" width="8" height="30"/>
+      <rect x="240" width="6" height="30"/>
+    </g>
+  </g>
+</svg>

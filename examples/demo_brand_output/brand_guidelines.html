@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RenWork Global AI - 品牌全方位视觉识别系统 (VI Brand Identity Manual)</title>
+  <link rel="stylesheet" href="tokens.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body), var(--font-chinese);
+      background-color: var(--surface-canvas);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 40px 24px; }
+    
+    /* Header */
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 24px; border-bottom: 1px solid var(--surface-border); margin-bottom: 40px;
+    }
+    .brand-title h1 { font-size: 32px; font-weight: 800; color: var(--brand-primary); }
+    .brand-title p { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+    .theme-toggle {
+      background: var(--surface-card); border: 1px solid var(--surface-border);
+      color: var(--text-primary); padding: 8px 16px; border-radius: var(--radius-full);
+      cursor: pointer; font-size: 14px; font-weight: 600;
+    }
+
+    /* Section Styles */
+    section { margin-bottom: 56px; }
+    .section-header { margin-bottom: 24px; }
+    .section-header h2 { font-size: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .section-header h2::before {
+      content: ""; display: inline-block; width: 6px; height: 24px;
+      background: var(--brand-primary); border-radius: 3px;
+    }
+    .section-header p { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+
+    /* Cards & Grids */
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 24px; }
+    .card {
+      background: var(--surface-card); border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm);
+    }
+
+    /* Color Swatches */
+    .color-preview { height: 110px; border-radius: var(--radius-sm); margin-bottom: 14px; border: 1px solid rgba(0,0,0,0.06); }
+    .color-info h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .color-meta { font-size: 13px; color: var(--text-secondary); font-family: var(--font-mono); }
+    .color-copy-pill {
+      display: inline-block; background: rgba(0,0,0,0.04); padding: 2px 8px;
+      border-radius: 4px; cursor: pointer; margin-top: 6px; font-size: 12px;
+    }
+
+    /* Components Showcase */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 22px; border-radius: var(--radius-md); font-weight: 600;
+      cursor: pointer; text-decoration: none; transition: all 0.2s; border: none; font-size: 14px;
+    }
+    .btn-primary { background: var(--brand-primary); color: #FFF; box-shadow: var(--shadow-glow); }
+    .btn-secondary { background: var(--brand-secondary); color: #FFF; }
+    .btn-accent { background: var(--brand-accent); color: #0F172A; }
+    .btn-outline { background: transparent; border: 1.5px solid var(--brand-primary); color: var(--brand-primary); }
+
+    /* SVG Previews */
+    .preview-box {
+      background: #F1F5F9; border-radius: var(--radius-md); padding: 20px;
+      text-align: center; border: 1px dashed var(--surface-border); margin-top: 12px;
+    }
+    .preview-box img, .preview-box svg { max-width: 100%; height: auto; border-radius: 6px; box-shadow: var(--shadow-sm); }
+
+    /* Prompt Box */
+    .prompt-box {
+      background: #020617; color: #E2E8F0; padding: 16px; border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 12px; line-height: 1.5; max-height: 140px;
+      overflow-y: auto; position: relative; margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand-title">
+        <h1>RenWork Global AI</h1>
+        <p>企业全方位品牌视觉识别系统规范手册 · 企业版 v2.0</p>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌓 切换明暗视图</button>
+    </header>
+
+    <!-- 1. 基础核心色彩系统 -->
+    <section>
+      <div class="section-header">
+        <h2>01 / 品牌核心色彩系统 (Color DNA &amp; Ratios)</h2>
+        <p>严格遵循 60-30-10 黄金色彩配比法则，并通过 WCAG 2.1 AA/AAA 国际可访问性无障碍认证。</p>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <div class="color-preview" style="background-color: #0070E0;"></div>
+          <div class="color-info">
+            <h3>Brand Primary Core</h3>
+            <p class="color-meta">HEX: #0070E0<br>RGB: rgb(0, 112, 224)<br>CMYK: C100 M50 Y0 K12</p>
+            <span class="color-copy-pill" onclick="copyText('#0070E0')">📋 复制色值</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-preview" style="background-color: #00A0E0;"></div>
+          <div class="color-info">
+            <h3>Brand Secondary Accent</h3>
+            <p class="color-meta">HEX: #00A0E0<br>RGB: rgb(0, 160, 224)<br>CMYK: C100 M29 Y0 K12</p>
+            <span class="color-copy-pill" onclick="copyText('#00A0E0')">📋 复制色值</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-preview" style="background-color: #F88410;"></div>
+          <div class="color-info">
+            <h3>High-Energy CTA Accent</h3>
+            <p class="color-meta">HEX: #F88410<br>RGB: rgb(248, 132, 16)<br>CMYK: C0 M47 Y94 K3</p>
+            <span class="color-copy-pill" onclick="copyText('#F88410')">📋 复制色值</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-preview" style="background-color: #0F172A;"></div>
+          <div class="color-info">
+            <h3>Deep Space Charcoal</h3>
+            <p class="color-meta">HEX: #0F172A<br>RGB: rgb(15, 23, 42)<br>用途: 文字主色 / 暗色底板</p>
+            <span class="color-copy-pill" onclick="copyText('#0F172A')">📋 复制色值</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 线上数字应用系统 -->
+    <section>
+      <div class="section-header">
+        <h2>02 / 线上数字应用系统 (Digital Application Suite)</h2>
+        <p>覆盖 Web UI 组件、App Icon 矩阵、多端 Favicon 与 16:9 PPT 母版规范。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Web UI 标准设计规范与交互态</h3>
+          <p style="font-size:14px; color:var(--text-secondary); margin: 8px 0 16px;">基于 tokens.css 驱动的标准组件，支持一键切换主题与无障碍交互。</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom: 20px;">
+            <button class="btn btn-primary">Primary 核心操作</button>
+            <button class="btn btn-secondary">Secondary 次级操作</button>
+            <button class="btn btn-accent">Accent 转化锚点</button>
+            <button class="btn btn-outline">Outline 描边边框</button>
+          </div>
+          <div class="prompt-box">
+            /* Web Tokens 导入说明 */<br>
+            @import url("tokens.css");<br>
+            background: var(--brand-primary);<br>
+            box-shadow: var(--shadow-glow);
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>移动端 App Icon 与 Favicon 矩阵</h3>
+          <p style="font-size:14px; color:var(--text-secondary); margin: 8px 0 16px;">支持 iOS 1024 连续曲率、Android 自适应双层与 Web 多尺寸 Favicon。</p>
+          <div class="preview-box" style="display:flex; justify-content:center; gap:24px; align-items:center;">
+            <img src="svg/ios_app_icon_1024.svg" width="96" height="96" style="border-radius:22px;" alt="iOS Icon">
+            <img src="svg/favicon.svg" width="48" height="48" alt="Favicon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 线下与实体空间应用系统 -->
+    <section>
+      <div class="section-header">
+        <h2>03 / 线下实体空间与环境导视系统 (Environmental Suite)</h2>
+        <p>含公司门头、前台形象、文化墙、会议室磨砂腰线、培训室大屏、发布会舞台巨幕与商务文具。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>商务办公事务文具 (名片、工牌与展架)</h3>
+          <p style="font-size:14px; color:var(--text-secondary); margin: 8px 0 16px;">标准 90x54mm 双面名片与 54x85mm CR80 工牌矢量预览：</p>
+          <div class="preview-box">
+            <img src="svg/business_card_front.svg" style="max-height:160px; margin-right:12px;" alt="Card Front">
+            <img src="svg/business_card_back.svg" style="max-height:160px;" alt="Card Back">
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>会议室磨砂玻璃防撞腰线</h3>
+          <p style="font-size:14px; color:var(--text-secondary); margin: 8px 0 16px;">透光率 65%，高度 200mm，中心距地 1200mm：</p>
+          <div class="preview-box">
+            <img src="svg/meeting_room_frosted_film.svg" style="width:100%; max-height:80px;" alt="Frosted Film">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 3D 真实场景 AI 渲染 Prompts 指南 -->
+    <section>
+      <div class="section-header">
+        <h2>04 / 3D 真实场景 AI 渲染提示词工程 (Midjourney &amp; FLUX Prompts)</h2>
+        <p>10 大核心场景全覆盖，可直接复制至 Midjourney v6 / FLUX.1 生成出版级空间效果图。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>🏢 公司门头与建筑外立面 (Outdoor Facade)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">材质：深色钛锌板幕墙 + 3D金属背发光（色温4000K自然白）</p>
+          <div class="prompt-box" id="p1">Commercial architecture photography, modern headquarters entrance facade for 'RenWork Global AI', minimalist dark titanium zinc cladding wall, 3D dimensional halo-lit backlit logo sign emitting elegant brand glow (#0070E0 and warm white 4000K), tempered glass canopy, luxury polished terrazzo floor with subtle reflections, architectural lighting, dusk twilight atmosphere, ultra-realistic, architectural digest, shot on Hasselblad H6D-100c, 8k resolution, photorealistic --ar 16:9 --style raw --v 6.0</div>
+          <button class="btn btn-outline" style="margin-top:10px; padding:6px 14px; font-size:12px;" onclick="copyPrompt('p1')">📋 复制门头 Prompt</button>
+        </div>
+
+        <div class="card">
+          <h3>🎤 全球产品发布会主舞台巨幕 (Keynote Stage KV)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">规格：32:9 超宽环形曲面LED地屏与主屏 + 激光矩阵</p>
+          <div class="prompt-box" id="p2">Epic global product launch keynote event stage, massive 32:9 curved giant LED screen glowing with futuristic visual key visual of 'RenWork Global AI' in radiant electric brand colors (#0070E0, #F88410), dramatic concert-grade laser beams and atmospheric haze, glossy black reflective stage floor, charismatic presenter standing center stage holding clicker, auditorium packed with audience, Apple keynote level production, 8k --ar 16:9 --v 6.0</div>
+          <button class="btn btn-outline" style="margin-top:10px; padding:6px 14px; font-size:12px;" onclick="copyPrompt('p2')">📋 复制发布会 Prompt</button>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--surface-border); text-align: center; font-size: 13px; color: var(--text-muted);">
+      © 2026 RenWork Global AI. 本品牌视觉识别系统受著作权与商标法全域保护 · 由 Brand Visual System Master 自动生成
+    </footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      if (current === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }
+    function copyText(val) {
+      navigator.clipboard.writeText(val);
+      alert('已复制色值到剪贴板: ' + val);
+    }
+    function copyPrompt(id) {
+      const txt = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(txt);
+      alert('已复制 AI 渲染提示词到剪贴板！可以直接在 Midjourney / FLUX 中粘贴生成。');
+    }
+  </script>
+</body>
+</html>

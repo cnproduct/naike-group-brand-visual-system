@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2000" width="800" height="2000">
+
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="naikeRedGrad" x1="0%" y1="0%" x2="40%" y2="100%">
+      <stop offset="0%" stop-color="#E0221B"/>
+      <stop offset="60%" stop-color="#B70005"/>
+      <stop offset="100%" stop-color="#8E0003"/>
+    </linearGradient>
+
+    <!-- Background Blue Gradient -->
+    <linearGradient id="naikeBlueGrad" x1="20%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC"/>
+      <stop offset="50%" stop-color="#004B98"/>
+      <stop offset="100%" stop-color="#002868"/>
+    </linearGradient>
+
+    <!-- Golden Sparkle Glow -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D depth -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="40%" stop-color="#141E33"/>
+      <stop offset="100%" stop-color="#090E17"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Canvas -->
+  <rect width="800" height="2000" fill="url(#bannerBg)"/>
+
+  <!-- Top Hero Glow & Angled Geometry -->
+  <path d="M 0 0 L 800 0 L 800 550 L 0 420 Z" fill="#B70005" opacity="0.12"/>
+  <path d="M 0 0 L 600 0 L 0 500 Z" fill="#004B98" opacity="0.18"/>
+
+  <!-- Header Logo & Subtitle -->
+  <g transform="translate(100, 120)">
+    <g transform="scale(0.55)" filter="url(#badgeShadow)">
+      
+    <!-- Squircle Container with Clip Path -->
+    <g id="naikeBadgeGraphic">
+      <clipPath id="squircleClip">
+        <rect x="0" y="0" width="400" height="400" rx="90" ry="90" />
+      </clipPath>
+
+      <g clip-path="url(#squircleClip)">
+        <!-- Top Crimson Background -->
+        <rect x="0" y="0" width="400" height="400" fill="url(#naikeRedGrad)"/>
+
+        <!-- Bottom Dynamic Ocean Blue Wave/Field -->
+        <path d="M -20 220 C 120 240, 180 180, 420 150 L 420 420 L -20 420 Z" fill="url(#naikeBlueGrad)"/>
+
+        <!-- Stylized White Dynamic 'n' Arch -->
+        <!-- Left Stem: Tilted Pillar with forward slant -->
+        <path d="M 125 105 L 165 105 L 115 305 L 75 305 Z" fill="#FFFFFF"/>
+
+        <!-- Forward Sweeping Arch Bridge & Right Leg -->
+        <path d="M 152 185 C 190 120, 290 120, 310 180 C 315 195, 305 240, 295 305 L 255 305 C 265 245, 272 198, 258 178 C 242 155, 178 160, 142 225 Z" fill="#FFFFFF"/>
+
+        <!-- Four-Point Precision Sparkle Star -->
+        <!-- Center of star at (315, 125) -->
+        <g transform="translate(315, 125)" filter="url(#starGlow)">
+          <path d="M 0 -28 Q 0 0, 28 0 Q 0 0, 0 28 Q 0 0, -28 0 Q 0 0, 0 -28 Z" fill="#FFFFFF"/>
+          <circle cx="0" cy="0" r="3.5" fill="#FFB800"/>
+        </g>
+      </g>
+
+      <!-- Inner Ambient Specular Highlight Line -->
+      <rect x="3" y="3" width="394" height="394" rx="88" ry="88" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+    </g>
+
+    </g>
+    <text x="260" y="125" font-family="'Montserrat', sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" letter-spacing="-1">Naike Group</text>
+    <text x="264" y="165" font-family="'PingFang SC', sans-serif" font-size="20" font-weight="700" fill="#FFB800" letter-spacing="4">耐科集团 · 始于2008</text>
+  </g>
+
+  <!-- Big Catchy Headline -->
+  <g transform="translate(100, 420)">
+    <text x="0" y="0" font-family="'Montserrat', sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" line-height="1.2">Factory-Backed</text>
+    <text x="0" y="56" font-family="'Montserrat', sans-serif" font-size="44" font-weight="800" fill="#FFB800">Product Development.</text>
+    <text x="0" y="120" font-family="'PingFang SC', sans-serif" font-size="26" font-weight="600" fill="#E2E8F0">专注全球定制礼品与环保餐具智造</text>
+    <text x="0" y="156" font-family="'Inter', sans-serif" font-size="16" fill="#94A3B8">From drawings &amp; molds to rapid sampling and global export.</text>
+  </g>
+
+  <!-- Pillar 1: NAIKE GIFTS Card -->
+  <g transform="translate(80, 680)">
+    <rect width="640" height="280" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="280" rx="4" fill="#B70005"/>
+    <text x="40" y="55" font-family="'Montserrat', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">NAIKE GIFTS</text>
+    <text x="40" y="90" font-family="'PingFang SC', sans-serif" font-size="18" font-weight="700" fill="#B70005">企业定制礼品与品牌周边</text>
+    <text x="40" y="140" font-family="'Inter', sans-serif" font-size="15" fill="#CBD5E1">
+      • Drinkware, Tumblers &amp; Vacuum Bottles<br/>
+      • Executive Promotional Merchandise<br/>
+      • Custom Packaging, Tooling &amp; Rapid Prototypes
+    </text>
+    <text x="40" y="245" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#FFB800">→ www.naikegifts.com</text>
+  </g>
+
+  <!-- Pillar 2: NAIKE TABLEWARE Card -->
+  <g transform="translate(80, 1000)">
+    <rect width="640" height="280" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="280" rx="4" fill="#004B98"/>
+    <text x="40" y="55" font-family="'Montserrat', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">NAIKE TABLEWARE</text>
+    <text x="40" y="90" font-family="'PingFang SC', sans-serif" font-size="18" font-weight="700" fill="#004B98">可重复使用环保餐具与模压制品</text>
+    <text x="40" y="140" font-family="'Inter', sans-serif" font-size="15" fill="#CBD5E1">
+      • Reusable Food Containers &amp; Bento Sets<br/>
+      • Eco-friendly Molded Fiber &amp; Polymers<br/>
+      • Food-Contact FDA / LFGB Certified Production
+    </text>
+    <text x="40" y="245" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#38BDF8">→ www.naiketableware.com</text>
+  </g>
+
+  <!-- Global Certifications Grid -->
+  <g transform="translate(80, 1340)">
+    <rect width="640" height="200" rx="20" fill="rgba(15,23,42,0.8)" stroke="#334155" stroke-width="1.5"/>
+    <text x="320" y="45" font-family="'Montserrat', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">GLOBAL EXPORT AUDITS &amp; COMPLIANCE</text>
+    <g transform="translate(40, 75)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="120" height="80" rx="12" fill="#1E293B"/>
+      <text x="60" y="48" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#004B98" text-anchor="middle">ISO 9001</text>
+      <!-- Badge 2 -->
+      <rect x="145" y="0" width="120" height="80" rx="12" fill="#1E293B"/>
+      <text x="205" y="48" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#B70005" text-anchor="middle">SGS LAB</text>
+      <!-- Badge 3 -->
+      <rect x="290" y="0" width="120" height="80" rx="12" fill="#1E293B"/>
+      <text x="350" y="48" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFB800" text-anchor="middle">FDA/LFGB</text>
+      <!-- Badge 4 -->
+      <rect x="435" y="0" width="120" height="80" rx="12" fill="#1E293B"/>
+      <text x="495" y="48" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#10B981" text-anchor="middle">BSCI AUDIT</text>
+    </g>
+  </g>
+
+  <!-- Bottom Contact & QR Zone (Eye-level for trade show visitors) -->
+  <g transform="translate(80, 1600)">
+    <rect width="640" height="280" rx="24" fill="#FFFFFF"/>
+    <!-- QR Code placeholder -->
+    <g transform="translate(40, 40)">
+      <rect width="180" height="180" rx="12" fill="#0F172A"/>
+      <rect x="20" y="20" width="50" height="50" fill="#FFFFFF"/>
+      <rect x="30" y="30" width="30" height="30" fill="#B70005"/>
+      <rect x="110" y="20" width="50" height="50" fill="#FFFFFF"/>
+      <rect x="120" y="30" width="30" height="30" fill="#004B98"/>
+      <rect x="20" y="110" width="50" height="50" fill="#FFFFFF"/>
+      <rect x="30" y="120" width="30" height="30" fill="#FFB800"/>
+      <!-- Inner text -->
+      <circle cx="90" cy="90" r="24" fill="#FFFFFF"/>
+      <text x="90" y="98" font-family="'Montserrat', sans-serif" font-size="22" font-weight="900" fill="#0F172A" text-anchor="middle">n</text>
+      <text x="90" y="215" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">SCAN FOR INQUIRY</text>
+    </g>
+
+    <g transform="translate(260, 70)" font-family="'Inter', sans-serif">
+      <text x="0" y="0" font-size="26" font-weight="900" fill="#0F172A">Meet Our Team at the Booth</text>
+      <text x="0" y="34" font-size="16" font-weight="600" fill="#B70005">Hong Kong &amp; Global Trade Shows</text>
+      <text x="0" y="74" font-size="15" fill="#475569">Email: info@naikegroup.com</text>
+      <text x="0" y="104" font-size="15" fill="#475569">Web: www.naikegroup.com</text>
+      <text x="0" y="134" font-size="15" font-weight="700" fill="#004B98">Factory-Backed Product Development Since 2008</text>
+    </g>
+  </g>
+</svg>

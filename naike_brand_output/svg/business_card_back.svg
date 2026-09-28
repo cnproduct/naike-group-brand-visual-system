@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 638" width="1062" height="638">
+  <defs>
+    <linearGradient id="backBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1062" height="638" rx="28" fill="url(#backBg)" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- Left Accent Vertical Spine -->
+  <rect x="0" y="0" width="18" height="638" rx="8" fill="#B70005"/>
+  <rect x="18" y="160" width="6" height="260" rx="3" fill="#004B98"/>
+
+  <!-- Executive Info Block -->
+  <g transform="translate(90, 130)">
+    <text x="0" y="32" font-family="'PingFang SC', sans-serif" font-size="36" font-weight="800" fill="#0F172A">张 敏 <tspan font-family="'Inter', sans-serif" font-size="24" font-weight="600" fill="#64748B">/ Michael Zhang</tspan></text>
+    <text x="0" y="70" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#B70005" letter-spacing="1">Director of Global Supply Chain &amp; OEM/ODM Programs</text>
+    <text x="0" y="94" font-family="'PingFang SC', sans-serif" font-size="13" font-weight="500" fill="#64748B">全球供应链总监 · 礼品与餐具智造项目部</text>
+
+    <line x1="0" y1="120" x2="520" y2="120" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- Contact details -->
+    <g transform="translate(0, 155)" font-family="'Inter', sans-serif" font-size="15" fill="#334155">
+      <text x="0" y="0">📞 +86 (571) 8800-2008 / +86 138-0000-8888</text>
+      <text x="0" y="34">✉️ michael.zhang@naikegroup.com</text>
+      <text x="0" y="68">🌐 www.naikegroup.com · www.naikegifts.com · www.naiketableware.com</text>
+      <text x="0" y="102">📍 NAIKE Industrial Innovation Center, Building 6, High-Tech Park</text>
+    </g>
+  </g>
+
+  <!-- Right QR & Certifications Block -->
+  <g transform="translate(770, 140)">
+    <!-- QR Code Box -->
+    <rect width="180" height="180" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Simulated QR elements -->
+    <rect x="20" y="20" width="44" height="44" fill="#0F172A"/>
+    <rect x="28" y="28" width="28" height="28" fill="#FFFFFF"/>
+    <rect x="34" y="34" width="16" height="16" fill="#B70005"/>
+
+    <rect x="116" y="20" width="44" height="44" fill="#0F172A"/>
+    <rect x="124" y="28" width="28" height="28" fill="#FFFFFF"/>
+    <rect x="130" y="34" width="16" height="16" fill="#004B98"/>
+
+    <rect x="20" y="116" width="44" height="44" fill="#0F172A"/>
+    <rect x="28" y="124" width="28" height="28" fill="#FFFFFF"/>
+    <rect x="34" y="130" width="16" height="16" fill="#0F172A"/>
+
+    <!-- Data matrix dots -->
+    <g fill="#334155">
+      <rect x="80" y="30" width="14" height="14"/>
+      <rect x="74" y="60" width="16" height="16"/>
+      <rect x="100" y="80" width="18" height="14"/>
+      <rect x="40" y="80" width="14" height="18"/>
+      <rect x="80" y="120" width="20" height="12"/>
+      <rect x="120" y="100" width="16" height="16"/>
+      <rect x="140" y="130" width="14" height="24"/>
+      <rect x="110" y="145" width="20" height="15"/>
+    </g>
+    <!-- Center logo pill -->
+    <rect x="72" y="72" width="36" height="36" rx="8" fill="#B70005"/>
+    <text x="90" y="96" font-family="'Montserrat', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">n</text>
+
+    <text x="90" y="215" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">SCAN FOR E-CATALOG</text>
+
+    <!-- Global Compliance Pills -->
+    <g transform="translate(0, 245)">
+      <rect x="0" y="0" width="84" height="28" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+      <text x="42" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#004B98" text-anchor="middle">ISO 9001</text>
+
+      <rect x="96" y="0" width="84" height="28" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+      <text x="138" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#B70005" text-anchor="middle">SGS AUDIT</text>
+    </g>
+  </g>
+</svg>

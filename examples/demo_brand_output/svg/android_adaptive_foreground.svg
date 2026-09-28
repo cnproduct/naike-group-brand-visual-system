@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 432" width="432" height="432">
+  <defs>
+    <linearGradient id="fgSymbol" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F88410"/>
+    </linearGradient>
+    <filter id="fgShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  <g transform="translate(216, 216)" filter="url(#fgShadow)">
+    <circle cx="0" cy="0" r="76" fill="url(#fgSymbol)"/>
+    <path d="M 0 -38 L 33 28 L -33 28 Z" fill="#0070E0"/>
+    <circle cx="0" cy="0" r="14" fill="#FFFFFF"/>
+  </g>
+</svg>

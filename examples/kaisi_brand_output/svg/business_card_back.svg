@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 638" width="1062" height="638">
+  <defs>
+    <linearGradient id="cardBackBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1062" height="638" rx="24" fill="url(#cardBackBg)" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+
+  <!-- Left Accent Accent Line -->
+  <rect x="0" y="0" width="16" height="638" rx="8" fill="#0070F0"/>
+  <rect x="16" y="180" width="6" height="240" rx="3" fill="#F88C10"/>
+
+  <!-- Person Info -->
+  <g transform="translate(100, 150)">
+    <text x="0" y="40" font-family="'PingFang SC', sans-serif" font-size="38" font-weight="700" fill="#303030">陈晨 / Chen Chen</text>
+    <text x="0" y="80" font-family="-apple-system, sans-serif" font-size="18" font-weight="600" fill="#0070F0" letter-spacing="1">VP of Global Brand &amp; Product Strategy</text>
+    <line x1="0" y1="110" x2="480" y2="110" stroke="rgba(0,0,0,0.08)" stroke-width="1.5"/>
+
+    <!-- Contact details -->
+    <g transform="translate(0, 150)" font-family="-apple-system, sans-serif" font-size="16" fill="#475569">
+      <text x="0" y="0">📱 +86 186-0000-8888 / +1 (800) 888-0199</text>
+      <text x="0" y="36">✉️ contact@开思kaisi.com</text>
+      <text x="0" y="72">🌐 www.开思kaisi.com</text>
+      <text x="0" y="108">📍 High-Tech Innovation Center, Tower A, 28F</text>
+    </g>
+  </g>
+
+  <!-- QR Code Mockup Frame -->
+  <g transform="translate(840, 360)">
+    <rect width="130" height="130" rx="12" fill="#FFFFFF" stroke="rgba(0,0,0,0.08)" stroke-width="2"/>
+    <rect x="15" y="15" width="40" height="40" fill="#303030"/>
+    <rect x="75" y="15" width="40" height="40" fill="#303030"/>
+    <rect x="15" y="75" width="40" height="40" fill="#303030"/>
+    <rect x="25" y="25" width="20" height="20" fill="#FFFFFF"/>
+    <rect x="85" y="25" width="20" height="20" fill="#FFFFFF"/>
+    <rect x="25" y="85" width="20" height="20" fill="#FFFFFF"/>
+    <rect x="70" y="70" width="45" height="45" fill="#0070F0" opacity="0.8"/>
+    <text x="65" y="160" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#94A3B8">SCAN CONTACT</text>
+  </g>
+</svg>

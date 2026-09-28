@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开思 KAISI · 企业全方位品牌视觉识别系统 (Brand VI Guidelines)</title>
+  <link rel="stylesheet" href="tokens.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand-primary: #0070F0;
+      --brand-secondary: #F0B000;
+      --brand-accent: #F88C10;
+      --surface-dark: #303030;
+      --surface-canvas: #F8FAFC;
+      --surface-card: #FFFFFF;
+      --surface-border: #E2E8F0;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-muted: #94A3B8;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow-sm: 0 2px 10px rgba(0,0,0,0.04);
+      --shadow-md: 0 8px 30px rgba(15,23,42,0.08);
+      --shadow-glow: 0 8px 30px rgba(0, 112, 240, 0.25);
+    }
+    [data-theme="dark"] {
+      --surface-canvas: #090D16;
+      --surface-card: #0F172A;
+      --surface-border: #1E293B;
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+      background-color: var(--surface-canvas);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+      padding-bottom: 80px;
+    }
+    .container { max-width: 1320px; margin: 0 auto; padding: 40px 24px; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 24px; border-bottom: 1px solid var(--surface-border); margin-bottom: 40px;
+    }
+    .brand-title h1 { font-size: 32px; font-weight: 800; color: var(--brand-primary); display: flex; align-items: center; gap: 12px; }
+    .brand-title p { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+    .badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+    .badge-blue { background: rgba(0, 112, 240, 0.12); color: var(--brand-primary); }
+    .theme-toggle {
+      background: var(--surface-card); border: 1px solid var(--surface-border);
+      color: var(--text-primary); padding: 8px 20px; border-radius: 9999px;
+      font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;
+    }
+    .theme-toggle:hover { border-color: var(--brand-primary); }
+
+    section { margin-bottom: 64px; }
+    .section-header { margin-bottom: 24px; }
+    .section-header h2 { font-size: 24px; font-weight: 800; display: flex; align-items: center; gap: 12px; }
+    .section-header h2::before {
+      content: ""; display: inline-block; width: 6px; height: 24px;
+      background: linear-gradient(to bottom, var(--brand-primary), var(--brand-secondary)); border-radius: 3px;
+    }
+    .section-header p { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 28px; }
+
+    .card {
+      background: var(--surface-card); border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm);
+      overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .card-img-wrap {
+      border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 16px;
+      border: 1px solid var(--surface-border); box-shadow: var(--shadow-sm);
+    }
+    .card-img-wrap img { width: 100%; height: auto; display: block; transition: transform 0.3s; }
+    .card-img-wrap img:hover { transform: scale(1.02); }
+
+    .color-preview { height: 110px; border-radius: var(--radius-sm); margin-bottom: 14px; }
+    .color-info h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .color-meta { font-family: monospace; font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+    .copy-btn {
+      display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600;
+      padding: 4px 12px; border-radius: 6px; background: rgba(0, 112, 240, 0.08);
+      color: var(--brand-primary); cursor: pointer; border: none; margin-top: 8px;
+    }
+    .copy-btn:hover { background: rgba(0, 112, 240, 0.16); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 22px; border-radius: var(--radius-sm); font-weight: 600;
+      cursor: pointer; text-decoration: none; border: none; font-size: 14px;
+    }
+    .btn-primary { background: var(--brand-primary); color: #FFF; box-shadow: var(--shadow-glow); }
+    .btn-secondary { background: var(--brand-secondary); color: #0F172A; }
+    .btn-accent { background: var(--brand-accent); color: #FFF; }
+    .btn-outline { background: transparent; border: 1.5px solid var(--brand-primary); color: var(--brand-primary); }
+
+    .prompt-box {
+      background: #020617; color: #E2E8F0; padding: 14px; border-radius: var(--radius-sm);
+      font-family: monospace; font-size: 12px; line-height: 1.5; margin-top: 12px;
+      max-height: 110px; overflow-y: auto;
+    }
+    .preview-box {
+      background: #F1F5F9; border-radius: var(--radius-sm); padding: 16px;
+      text-align: center; border: 1px dashed var(--surface-border); margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand-title">
+        <h1>开思 KAISI <span class="badge badge-blue">VI System 2.0</span></h1>
+        <p>全方位企业品牌视觉识别系统手册 · 数字化汽车后市场产业互联网生态</p>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌓 切换明暗视图</button>
+    </header>
+
+    <!-- 00. 标志母标与特征解构 -->
+    <section>
+      <div class="section-header">
+        <h2>00 / 标志母标展示与特征解构 (Logo DNA & Clear Space)</h2>
+        <p>开思 (KAISI) 融合了高精度几何字标、A 标金字塔核心与 I 标阶梯跃升超级符号。</p>
+      </div>
+      <div class="card" style="text-align: center; padding: 40px 24px; margin-bottom: 24px; background: #FFFFFF; background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px); background-size: 20px 20px;">
+        <img src="logo_source.png" style="max-width: 540px; width: 90%; height: auto; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.06));" alt="开思 KAISI 标志">
+        <div style="margin-top: 20px; font-size: 12px; font-family: monospace; color: var(--text-muted);">
+          📐 绝对安全隔离区: 0.5X | 最小打印宽度: 20mm | 最小数字宽度: 48px
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <span class="badge badge-blue" style="width: fit-content; margin-bottom: 8px;">超级符号 01</span>
+          <h3 style="font-size: 16px; margin-bottom: 6px;">KAISI 科技电光蓝</h3>
+          <p style="font-size: 13px; color: var(--text-secondary);">代表数字化汽配供应链产业互联网的高效与确定性，主色色值 #0070F0，在白底对比度达 4.59:1（WCAG AA级合规）。</p>
+        </div>
+        <div class="card">
+          <span class="badge" style="background: rgba(240, 176, 0, 0.15); color: #B45309; width: fit-content; margin-bottom: 8px;">超级符号 02</span>
+          <h3 style="font-size: 16px; margin-bottom: 6px;">A 标金字塔核心金</h3>
+          <p style="font-size: 13px; color: var(--text-secondary);">字母 “A” 内部内嵌正三角形金字塔黄金核心，象征产业金字塔基石、核心数据资产沉淀与配件真品保证。</p>
+        </div>
+        <div class="card">
+          <span class="badge badge-blue" style="width: fit-content; margin-bottom: 8px;">超级符号 03</span>
+          <h3 style="font-size: 16px; margin-bottom: 6px;">I 标跃升阶梯像素</h3>
+          <p style="font-size: 13px; color: var(--text-secondary);">第二个 “I” 点位采用三级斜向递增的黄色像素方块，寓意产业链上下游合作伙伴“步步向好、数智跃升”的澎湃动能。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01. 核心色彩体系 -->
+    <section>
+      <div class="section-header">
+        <h2>01 / 品牌核心色彩系统 (Color Tokens & Ratios)</h2>
+        <p>严格遵循 60-30-10 黄金色彩配比法则，并通过 WCAG 2.1 AA 级对比度认证。</p>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <div class="color-preview" style="background-color: #0070F0;"></div>
+          <div class="color-info">
+            <h3>开思科技蓝 (Primary)</h3>
+            <p class="color-meta">HEX: #0070F0<br>RGB: (0, 112, 240)<br>CMYK: C100 M53 Y0 K6</p>
+            <button class="copy-btn" onclick="copyValue('#0070F0')">📋 复制色值</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-preview" style="background-color: #F0B000;"></div>
+          <div class="color-info">
+            <h3>进取阶梯金 (Secondary)</h3>
+            <p class="color-meta">HEX: #F0B000<br>RGB: (240, 176, 0)<br>CMYK: C0 M27 Y100 K6</p>
+            <button class="copy-btn" onclick="copyValue('#F0B000')">📋 复制色值</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-preview" style="background-color: #F88C10;"></div>
+          <div class="color-info">
+            <h3>活力强调橙 (Accent CTA)</h3>
+            <p class="color-meta">HEX: #F88C10<br>RGB: (248, 140, 16)<br>CMYK: C0 M44 Y94 K3</p>
+            <button class="copy-btn" onclick="copyValue('#F88C10')">📋 复制色值</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-preview" style="background-color: #303030;"></div>
+          <div class="color-info">
+            <h3>深邃碳灰黑 (Charcoal)</h3>
+            <p class="color-meta">HEX: #303030<br>RGB: (48, 48, 48)<br>用途: “开思”字标主色/文字</p>
+            <button class="copy-btn" onclick="copyValue('#303030')">📋 复制色值</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. 线上数字应用系统 (含真实渲染图) -->
+    <section>
+      <div class="section-header">
+        <h2>02 / 线上数字应用系统 (Digital Application Suite)</h2>
+        <p>包括 Web UI 设计规范、多端 App 图标矩阵、响应式官网门户透视展示。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/10_web_showcase_mockup.jpg" alt="官网展示与多设备透视">
+          </div>
+          <h3>💻 官网展示模版与多屏看板透视 (Web Showcase)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin: 6px 0 12px;">MacBook Pro 与 4K 外接显示屏呈现数字化汽配供应链产业互联网平台看板与品牌标牌。</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom: 12px;">
+            <button class="btn btn-primary">开思智能选配</button>
+            <button class="btn btn-secondary">供应链协同</button>
+            <button class="btn btn-accent">立即下单</button>
+            <button class="btn btn-outline">查看详情</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/09_app_mobile_showcase.jpg" alt="移动端 App Icon 与界面应用">
+          </div>
+          <h3>📱 移动端 App Icon 与移动界面应用 (Mobile App)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin: 6px 0 12px;">左机呈现 iOS 1024 连续曲率开思科技蓝图标，右机呈现移动端配件选配与供应链采购界面。</p>
+          <div class="preview-box" style="display:flex; justify-content:center; gap:24px; align-items:center;">
+            <img src="svg/ios_app_icon_1024.svg" width="64" height="64" style="border-radius:14px;" alt="iOS Icon">
+            <img src="svg/favicon.svg" width="36" height="36" alt="Favicon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. 线下实体空间与建筑导视系统 (全 10 大场景渲染图) -->
+    <section>
+      <div class="section-header">
+        <h2>03 / 线下实体空间与环境导视系统 (Environmental Suite)</h2>
+        <p>公司总部大厦门头、前台形象大厅、走廊文化墙、智能会议室、多功能培训厅、贵宾接待室、发布会舞台巨幕与商务文具。</p>
+      </div>
+      <div class="grid-2">
+        <!-- 门头 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/01_doorhead_facade.jpg" alt="公司总部大厦门头">
+          </div>
+          <h3>🏢 公司总部大厦门头外立面 (Outdoor Facade)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">材质：深灰钛锌板幕墙 + 3D不锈钢背发光字 (4000K自然白光 + 开思蓝光晕)。</p>
+          <div class="prompt-box">Prompt: Commercial architecture photography, modern headquarters entrance facade for '开思 KAISI', minimalist dark titanium zinc cladding wall, 3D dimensional halo-lit backlit logo sign emitting elegant brand glow (#0070F0 and warm white 4000K), tempered glass canopy, luxury polished terrazzo floor with subtle reflections, 8k.</div>
+        </div>
+
+        <!-- 前台 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/02_reception_lobby.jpg" alt="前台形象接待大厅">
+          </div>
+          <h3>🏛️ 前台形象接待区背景墙 (Reception Lobby)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">材质：意大利 Calacatta 鱼肚白大理石 + 3D拉丝金属立体字（水平标高 1500mm 黄金视平线）。</p>
+          <div class="prompt-box">Prompt: Corporate interior design photography, reception lobby of '开思 KAISI', luxury Calacatta marble front desk, feature accent background wall made of fluted acoustic oak wood panels and matte slate, floating 3D brushed brass and crystal acrylic corporate logo of '开思 KAISI' with recessed warm LED perimeter backlighting, 8k.</div>
+        </div>
+
+        <!-- 走廊文化墙 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/03_corridor_wall.jpg" alt="走廊企业文化墙">
+          </div>
+          <h3>🖼️ 走廊企业文化展示墙 (Corridor Culture Wall)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">结构：三层模块化磁吸亚克力展板，陈列企业使命愿景、发展历程时间轴与核心里程碑。</p>
+          <div class="prompt-box">Prompt: Modern tech office corridor hallway featuring the corporate brand culture wall for '开思 KAISI'. Sleek modular magnetic acrylic display panels showcasing corporate vision, core values, and development timeline. Brand blue #0070F0 and golden amber accents, linear ceiling spotlights, 8k.</div>
+        </div>
+
+        <!-- 会议室 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/04_conference_room.jpg" alt="智能会议室与磨砂腰线">
+          </div>
+          <h3>🚪 智能会议室与防撞磨砂腰线 (Conference Room)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">规格：高度 200mm，中心距地 1200mm，透光率 65%，高精度电脑镂空开思 Logo 纹理。</p>
+          <div class="prompt-box">Prompt: Executive corporate board meeting room with floor-to-ceiling glass walls. The glass wall features a customized sandblasted frosted privacy waistline film with cut-out 'KAISI 开思' brand logo pattern and blue accent guide lines at 1200mm height, 8k.</div>
+        </div>
+
+        <!-- 培训厅 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/05_training_hall.jpg" alt="多功能培训厅">
+          </div>
+          <h3>🎓 多功能培训厅与演讲台 (Training Hall)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">配置：胡桃木讲台镶嵌金属微标，无缝 P1.2 LED 大屏呈现开思科技蓝 16:9 待机主视觉。</p>
+          <div class="prompt-box">Prompt: Corporate training auditorium and lecture hall. Modern stage with a minimalist wooden lectern podium featuring the branded metal logo plaque of 'KAISI 开思'. Huge seamless 4K LED backdrop display showing a presentation keynote slide in brand blue #0070F0, 8k.</div>
+        </div>
+
+        <!-- 贵宾接待室 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/06_vip_lounge.jpg" alt="高管贵宾接待室">
+          </div>
+          <h3>☕ 高管贵宾接待室 (VIP Executive Lounge)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">设计：意大利皮质沙发组合、定制压凹真皮杯垫、骨瓷茶具配开思金边，背景现代抽象品牌艺术画。</p>
+          <div class="prompt-box">Prompt: Executive VIP reception lounge for 'KAISI 开思'. High-end modern interior, Italian leather sofa, travertine marble coffee table with bespoke embossed leather coasters, framed modern art piece abstractly incorporating tech blue and golden yellow of 'KAISI 开思', 8k.</div>
+        </div>
+
+        <!-- 产品发布会主舞台 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/07_launch_stage.jpg" alt="全球产品发布会主舞台">
+          </div>
+          <h3>🎤 全球产品发布会 32:9 巨幕主舞台 (Launch Keynote)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">舞台：32:9 超宽环形曲面屏，开思电光蓝与跃升金粒子光柱交织，黑色镜面地台倒影。</p>
+          <div class="prompt-box">Prompt: Epic global tech product launch keynote event stage for 'KAISI 开思'. Massive 32:9 curved giant LED screen glowing with futuristic visual key visual featuring the 'KAISI 开思' brand logo in radiant electric blue #0070F0 and golden amber particle rays, 8k.</div>
+        </div>
+
+        <!-- 商务文具平铺 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="images/08_stationery_flatlay.jpg" alt="商务文具平铺">
+          </div>
+          <h3>💼 商务办公文具与证件平铺 (Stationery Suite)</h3>
+          <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">清单：600g 重磅特种纸双面烫金名片、CR80 磨砂员工工牌、企业信纸信封与压凹笔记本。</p>
+          <div class="prompt-box">Prompt: Top-down flatlay commercial studio photography of complete corporate stationery suite for 'KAISI 开思'. Heavy cotton cardstock business cards with the blue and yellow 'KAISI 开思' logo, vertical frosted employee ID badge with blue lanyard, A4 letterhead, 8k.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--surface-border); text-align: center; font-size: 13px; color: var(--text-muted);">
+      © 2026 开思 KAISI. 企业全方位品牌视觉识别系统受著作权与知识产权法保护 · 由 Brand Visual System Master 自动生成
+    </footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      if (isDark) {
+        document.documentElement.removeAttribute("data-theme");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    }
+    function copyValue(v) {
+      navigator.clipboard.writeText(v);
+      alert("已成功复制色值: " + v);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="naikeRedGrad" x1="0%" y1="0%" x2="40%" y2="100%">
+      <stop offset="0%" stop-color="#E0221B"/>
+      <stop offset="60%" stop-color="#B70005"/>
+      <stop offset="100%" stop-color="#8E0003"/>
+    </linearGradient>
+
+    <!-- Background Blue Gradient -->
+    <linearGradient id="naikeBlueGrad" x1="20%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC"/>
+      <stop offset="50%" stop-color="#004B98"/>
+      <stop offset="100%" stop-color="#002868"/>
+    </linearGradient>
+
+    <!-- Golden Sparkle Glow -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D depth -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(56, 56)" filter="url(#badgeShadow)">
+    
+    <!-- Squircle Container with Clip Path -->
+    <g id="naikeBadgeGraphic">
+      <clipPath id="squircleClip">
+        <rect x="0" y="0" width="400" height="400" rx="90" ry="90" />
+      </clipPath>
+
+      <g clip-path="url(#squircleClip)">
+        <!-- Top Crimson Background -->
+        <rect x="0" y="0" width="400" height="400" fill="url(#naikeRedGrad)"/>
+
+        <!-- Bottom Dynamic Ocean Blue Wave/Field -->
+        <path d="M -20 220 C 120 240, 180 180, 420 150 L 420 420 L -20 420 Z" fill="url(#naikeBlueGrad)"/>
+
+        <!-- Stylized White Dynamic 'n' Arch -->
+        <!-- Left Stem: Tilted Pillar with forward slant -->
+        <path d="M 125 105 L 165 105 L 115 305 L 75 305 Z" fill="#FFFFFF"/>
+
+        <!-- Forward Sweeping Arch Bridge & Right Leg -->
+        <path d="M 152 185 C 190 120, 290 120, 310 180 C 315 195, 305 240, 295 305 L 255 305 C 265 245, 272 198, 258 178 C 242 155, 178 160, 142 225 Z" fill="#FFFFFF"/>
+
+        <!-- Four-Point Precision Sparkle Star -->
+        <!-- Center of star at (315, 125) -->
+        <g transform="translate(315, 125)" filter="url(#starGlow)">
+          <path d="M 0 -28 Q 0 0, 28 0 Q 0 0, 0 28 Q 0 0, -28 0 Q 0 0, 0 -28 Z" fill="#FFFFFF"/>
+          <circle cx="0" cy="0" r="3.5" fill="#FFB800"/>
+        </g>
+      </g>
+
+      <!-- Inner Ambient Specular Highlight Line -->
+      <rect x="3" y="3" width="394" height="394" rx="88" ry="88" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+    </g>
+
+  </g>
+</svg>

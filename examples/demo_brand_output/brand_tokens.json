@@ -1,0 +1,178 @@
+{
+  "brand_meta": {
+    "name": "RenWork Global AI",
+    "logo_file": "sample_logo.png",
+    "logo_dimensions": {
+      "width": 800,
+      "height": 800,
+      "aspect_ratio": 1.0
+    },
+    "logo_form_factor": "symbol_or_square",
+    "version": "2.0.0",
+    "generator": "Brand Visual System Master (AGY/Claude/OpenCode Standard)"
+  },
+  "color_palette": {
+    "primary": {
+      "name": "Brand Primary Core",
+      "hex": "#0070E0",
+      "rgb": "rgb(0, 112, 224)",
+      "cmyk": "C100 M50 Y0 K12",
+      "hsl": "hsl(210, 100%, 44%)",
+      "usage_ratio": "30% (Brand anchors, key surfaces, navigation active states)"
+    },
+    "secondary": {
+      "name": "Brand Secondary Accent",
+      "hex": "#00A0E0",
+      "rgb": "rgb(0, 160, 224)",
+      "cmyk": "C100 M29 Y0 K12",
+      "hsl": "hsl(197, 100%, 44%)",
+      "usage_ratio": "15% (Data highlights, secondary illustrations, badges)"
+    },
+    "accent_cta": {
+      "name": "High-Energy CTA Accent",
+      "hex": "#F88410",
+      "rgb": "rgb(248, 132, 16)",
+      "cmyk": "C0 M47 Y94 K3",
+      "hsl": "hsl(30, 95%, 52%)",
+      "usage_ratio": "10% (Action buttons, high-priority alert badges, conversion anchors)"
+    },
+    "canvas_light": {
+      "name": "Base Light Canvas",
+      "hex": "#F0F0F0",
+      "rgb": "rgb(240, 240, 240)",
+      "usage_ratio": "45% (Background canvases, card fills, clean space)"
+    },
+    "surface_dark": {
+      "name": "Deep Space Charcoal",
+      "hex": "#0F172A",
+      "rgb": "rgb(15, 23, 42)",
+      "usage_ratio": "Primary Text, Dark Mode background, architectural fascia backplates"
+    },
+    "semantics": {
+      "success": {
+        "hex": "#10B981",
+        "rgb": [
+          16,
+          185,
+          129
+        ],
+        "cmyk": [
+          75,
+          0,
+          60,
+          0
+        ]
+      },
+      "warning": {
+        "hex": "#F59E0B",
+        "rgb": [
+          245,
+          158,
+          11
+        ],
+        "cmyk": [
+          0,
+          42,
+          100,
+          0
+        ]
+      },
+      "danger": {
+        "hex": "#EF4444",
+        "rgb": [
+          239,
+          68,
+          68
+        ],
+        "cmyk": [
+          0,
+          85,
+          65,
+          0
+        ]
+      },
+      "info": {
+        "hex": "#0070E0",
+        "rgb": [
+          0,
+          112,
+          224
+        ],
+        "cmyk": [
+          100,
+          50,
+          0,
+          12
+        ]
+      }
+    }
+  },
+  "contrast_audit": {
+    "primary_on_white": {
+      "ratio": 4.78,
+      "wcag_aa_normal_text": true,
+      "wcag_aa_large_text": true,
+      "wcag_aaa_normal_text": false
+    },
+    "white_on_primary": {
+      "ratio": 4.78,
+      "wcag_aa_normal_text": true,
+      "wcag_aa_large_text": true
+    },
+    "primary_on_dark": {
+      "ratio": 3.74,
+      "wcag_aa_normal_text": false
+    }
+  },
+  "spatial_clearance": {
+    "unit": "X (defined as 1/2 of logo height or core symbol radius)",
+    "safe_zone": "0.5X on all 4 boundaries (No text, graphics or border intrusion)",
+    "minimum_digital_size_px": 32,
+    "minimum_print_size_mm": 12
+  },
+  "typography_pairings": {
+    "chinese_display": "PingFang SC, 'Source Han Sans CN', 'Microsoft YaHei', sans-serif",
+    "chinese_body": "'PingFang SC', 'Source Han Sans CN', 'Hiragino Sans GB', sans-serif",
+    "western_display": "'Inter', 'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+    "western_body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "monospace_code": "'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace",
+    "hierarchy_scale": {
+      "hero_display": {
+        "size": "48px / 3rem",
+        "weight": "800",
+        "line_height": "1.15"
+      },
+      "h1_title": {
+        "size": "36px / 2.25rem",
+        "weight": "700",
+        "line_height": "1.25"
+      },
+      "h2_section": {
+        "size": "24px / 1.5rem",
+        "weight": "600",
+        "line_height": "1.35"
+      },
+      "h3_card": {
+        "size": "18px / 1.125rem",
+        "weight": "600",
+        "line_height": "1.45"
+      },
+      "body_base": {
+        "size": "15px / 0.9375rem",
+        "weight": "400",
+        "line_height": "1.65"
+      },
+      "caption_small": {
+        "size": "13px / 0.8125rem",
+        "weight": "400",
+        "line_height": "1.5"
+      },
+      "micro_tag": {
+        "size": "11px / 0.6875rem",
+        "weight": "600",
+        "line_height": "1.4",
+        "letter_spacing": "0.05em"
+      }
+    }
+  }
+}

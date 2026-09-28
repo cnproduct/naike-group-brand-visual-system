@@ -1,0 +1,79 @@
+{
+  "presentation_meta": {
+    "aspect_ratio": "16:9",
+    "width_pt": 960,
+    "height_pt": 540,
+    "safe_margin_pt": 48
+  },
+  "slide_masters": [
+    {
+      "type": "cover",
+      "name": "01_Keynote_Cover",
+      "background": "surface_dark",
+      "elements": {
+        "hero_logo": {"x": 48, "y": 48, "width": 120, "height": 40},
+        "main_title": {"x": 48, "y": 200, "font_size": 44, "color": "#FFFFFF", "weight": "bold"},
+        "subtitle": {"x": 48, "y": 280, "font_size": 20, "color": "brand_accent"},
+        "footer_presenter": {"x": 48, "y": 460, "font_size": 12, "color": "#94A3B8"}
+      }
+    },
+    {
+      "type": "agenda",
+      "name": "02_Agenda_TOC",
+      "background": "canvas_light",
+      "elements": {
+        "header": {"title": "AGENDA / 核心大纲", "font_size": 28, "color": "surface_dark"},
+        "left_accent_bar": {"width": 8, "color": "brand_primary"},
+        "card_grid": {"columns": 2, "card_bg": "#FFFFFF", "card_border": "#E2E8F0"}
+      }
+    },
+    {
+      "type": "section_break",
+      "name": "03_Section_Divider",
+      "background": "brand_primary",
+      "elements": {
+        "watermark_number": {"font_size": 120, "color": "rgba(255,255,255,0.15)"},
+        "section_title": {"font_size": 36, "color": "#FFFFFF"}
+      }
+    },
+    {
+      "type": "two_col_comparison",
+      "name": "04_Contrast_Body",
+      "background": "canvas_light",
+      "elements": {
+        "col_left": {"title": "Current Bottlenecks / 现状瓶颈", "header_bg": "#FEE2E2", "text_color": "#991B1B"},
+        "col_right": {"title": "AI Next-Gen VI Solution / 升级破局", "header_bg": "#E0F2FE", "text_color": "#075985"}
+      }
+    },
+    {
+      "type": "three_card_pillars",
+      "name": "05_Three_Pillars",
+      "background": "canvas_light",
+      "elements": {
+        "cards": [
+          {"id": 1, "accent_color": "brand_primary", "title": "Digital Scalability"},
+          {"id": 2, "accent_color": "brand_accent", "title": "Physical Spatial Impact"},
+          {"id": 3, "accent_color": "brand_secondary", "title": "Governance & Quality Gates"}
+        ]
+      }
+    },
+    {
+      "type": "data_metrics",
+      "name": "06_Growth_Metrics",
+      "background": "surface_dark",
+      "elements": {
+        "metric_value": {"font_size": 64, "weight": "800", "color": "brand_accent"},
+        "metric_label": {"font_size": 16, "color": "#94A3B8"}
+      }
+    },
+    {
+      "type": "thank_you_closing",
+      "name": "07_Closing_QA",
+      "background": "surface_dark",
+      "elements": {
+        "headline": {"text": "Thank You / 创领未来", "font_size": 48, "color": "#FFFFFF"},
+        "contact_info": {"font_size": 14, "color": "brand_secondary"}
+      }
+    }
+  ]
+}

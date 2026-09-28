@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638 1004" width="638" height="1004">
+
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="naikeRedGrad" x1="0%" y1="0%" x2="40%" y2="100%">
+      <stop offset="0%" stop-color="#E0221B"/>
+      <stop offset="60%" stop-color="#B70005"/>
+      <stop offset="100%" stop-color="#8E0003"/>
+    </linearGradient>
+
+    <!-- Background Blue Gradient -->
+    <linearGradient id="naikeBlueGrad" x1="20%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC"/>
+      <stop offset="50%" stop-color="#004B98"/>
+      <stop offset="100%" stop-color="#002868"/>
+    </linearGradient>
+
+    <!-- Golden Sparkle Glow -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D depth -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Lanyard Slot Punch Hole -->
+  <rect width="638" height="1004" rx="36" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="259" y="32" width="120" height="22" rx="11" fill="#E2E8F0"/>
+
+  <!-- Top Header Crimson Gradient Banner -->
+  <rect x="0" y="80" width="638" height="220" fill="url(#naikeRedGrad)"/>
+  <path d="M 0 250 C 200 270, 360 210, 638 190 L 638 300 L 0 300 Z" fill="url(#naikeBlueGrad)" opacity="0.9"/>
+
+  <!-- Center Badge Floating over Header -->
+  <g transform="translate(259, 140) scale(0.3)" filter="url(#badgeShadow)">
+    
+    <!-- Squircle Container with Clip Path -->
+    <g id="naikeBadgeGraphic">
+      <clipPath id="squircleClip">
+        <rect x="0" y="0" width="400" height="400" rx="90" ry="90" />
+      </clipPath>
+
+      <g clip-path="url(#squircleClip)">
+        <!-- Top Crimson Background -->
+        <rect x="0" y="0" width="400" height="400" fill="url(#naikeRedGrad)"/>
+
+        <!-- Bottom Dynamic Ocean Blue Wave/Field -->
+        <path d="M -20 220 C 120 240, 180 180, 420 150 L 420 420 L -20 420 Z" fill="url(#naikeBlueGrad)"/>
+
+        <!-- Stylized White Dynamic 'n' Arch -->
+        <!-- Left Stem: Tilted Pillar with forward slant -->
+        <path d="M 125 105 L 165 105 L 115 305 L 75 305 Z" fill="#FFFFFF"/>
+
+        <!-- Forward Sweeping Arch Bridge & Right Leg -->
+        <path d="M 152 185 C 190 120, 290 120, 310 180 C 315 195, 305 240, 295 305 L 255 305 C 265 245, 272 198, 258 178 C 242 155, 178 160, 142 225 Z" fill="#FFFFFF"/>
+
+        <!-- Four-Point Precision Sparkle Star -->
+        <!-- Center of star at (315, 125) -->
+        <g transform="translate(315, 125)" filter="url(#starGlow)">
+          <path d="M 0 -28 Q 0 0, 28 0 Q 0 0, 0 28 Q 0 0, -28 0 Q 0 0, 0 -28 Z" fill="#FFFFFF"/>
+          <circle cx="0" cy="0" r="3.5" fill="#FFB800"/>
+        </g>
+      </g>
+
+      <!-- Inner Ambient Specular Highlight Line -->
+      <rect x="3" y="3" width="394" height="394" rx="88" ry="88" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+    </g>
+
+  </g>
+  <text x="319" y="285" font-family="'Montserrat', sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">NAIKE GROUP</text>
+
+  <!-- Photo Box Frame -->
+  <g transform="translate(209, 340)">
+    <rect width="220" height="260" rx="20" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="3"/>
+    <!-- Avatar Silhouette -->
+    <circle cx="110" cy="100" r="50" fill="#CBD5E1"/>
+    <path d="M 40 240 C 40 180, 180 180, 180 240 Z" fill="#CBD5E1"/>
+    <rect x="180" y="10" width="30" height="30" rx="6" fill="#FFB800"/>
+    <text x="195" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#0F172A" text-anchor="middle">VIP</text>
+  </g>
+
+  <!-- Name & Department -->
+  <g transform="translate(319, 660)" text-anchor="middle">
+    <text x="0" y="0" font-family="'PingFang SC', sans-serif" font-size="34" font-weight="800" fill="#0F172A">张 敏</text>
+    <text x="0" y="36" font-family="'Inter', sans-serif" font-size="20" font-weight="600" fill="#475569">Michael Zhang</text>
+    <text x="0" y="74" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#B70005" letter-spacing="1.5">GLOBAL OPERATIONS &amp; EXPORT</text>
+    <text x="0" y="102" font-family="'PingFang SC', sans-serif" font-size="14" font-weight="500" fill="#64748B">全球运营与出口管理部 · 工号 NK-200808</text>
+  </g>
+
+  <!-- Barcode & Access Security -->
+  <g transform="translate(119, 820)">
+    <line x1="0" y1="0" x2="400" y2="0" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Simulated Code 128 Barcode -->
+    <g transform="translate(40, 20)" fill="#0F172A">
+      <rect x="0" y="0" width="4" height="60"/>
+      <rect x="8" y="0" width="2" height="60"/>
+      <rect x="14" y="0" width="6" height="60"/>
+      <rect x="24" y="0" width="2" height="60"/>
+      <rect x="30" y="0" width="4" height="60"/>
+      <rect x="40" y="0" width="8" height="60"/>
+      <rect x="52" y="0" width="2" height="60"/>
+      <rect x="60" y="0" width="4" height="60"/>
+      <rect x="68" y="0" width="6" height="60"/>
+      <rect x="80" y="0" width="2" height="60"/>
+      <rect x="86" y="0" width="8" height="60"/>
+      <rect x="100" y="0" width="4" height="60"/>
+      <rect x="110" y="0" width="2" height="60"/>
+      <rect x="118" y="0" width="6" height="60"/>
+      <rect x="130" y="0" width="4" height="60"/>
+      <rect x="140" y="0" width="2" height="60"/>
+      <rect x="148" y="0" width="8" height="60"/>
+      <rect x="162" y="0" width="4" height="60"/>
+      <rect x="172" y="0" width="2" height="60"/>
+      <rect x="180" y="0" width="6" height="60"/>
+      <rect x="192" y="0" width="4" height="60"/>
+      <rect x="202" y="0" width="8" height="60"/>
+      <rect x="216" y="0" width="2" height="60"/>
+      <rect x="224" y="0" width="4" height="60"/>
+      <rect x="234" y="0" width="6" height="60"/>
+      <rect x="246" y="0" width="4" height="60"/>
+      <rect x="256" y="0" width="2" height="60"/>
+      <rect x="264" y="0" width="8" height="60"/>
+      <rect x="278" y="0" width="4" height="60"/>
+      <rect x="288" y="0" width="2" height="60"/>
+      <rect x="296" y="0" width="6" height="60"/>
+      <rect x="308" y="0" width="4" height="60"/>
+      <rect x="318" y="0" width="2" height="60"/>
+    </g>
+    <text x="200" y="96" font-family="'JetBrains Mono', monospace" font-size="12" fill="#64748B" text-anchor="middle">NK-8839-2008-GLOBAL-RFID</text>
+  </g>
+
+  <!-- Bottom Accent Stripe -->
+  <rect x="0" y="990" width="638" height="14" fill="#004B98"/>
+</svg>

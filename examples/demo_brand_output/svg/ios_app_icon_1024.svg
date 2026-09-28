@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="iosIconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0070E0"/>
+      <stop offset="70%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="symbolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F88410"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="rgba(0,0,0,0.35)"/>
+    </filter>
+  </defs>
+
+  <!-- iOS App Store 1024 Canvas (Square with continuous curvature masking) -->
+  <rect width="1024" height="1024" rx="224" fill="url(#iosIconBg)"/>
+
+  <!-- Inner ambient light ring -->
+  <rect x="24" y="24" width="976" height="976" rx="200" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="4"/>
+
+  <!-- Central Super-symbol -->
+  <g transform="translate(512, 512)" filter="url(#dropShadow)">
+    <!-- Base geometric shield/diamond -->
+    <rect x="-240" y="-240" width="480" height="480" rx="120" fill="#0F172A" stroke="#00A0E0" stroke-width="12" transform="rotate(45)"/>
+    <!-- Core dynamic glow circle -->
+    <circle cx="0" cy="0" r="160" fill="url(#symbolGrad)"/>
+    <!-- Center cut-out apex mark -->
+    <path d="M 0 -80 L 70 60 L -70 60 Z" fill="#0070E0"/>
+    <!-- Micro accent spark -->
+    <circle cx="0" cy="0" r="28" fill="#FFFFFF"/>
+  </g>
+</svg>
